@@ -1,0 +1,6 @@
+#check wheather a student passed(marks conditon using and)
+math = int(input("Enter the total math"))
+science = int(input("Enter the mark of science"))
+english = int(input("Enter the mark of english"))
+passed = (math >= 33 and science >= 33 and english >= 33)
+print(passed)
