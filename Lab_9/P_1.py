@@ -7,6 +7,6 @@ class Animal:
 class Dog(Animal):
    def sound(self):
       print(self.name,"barks")
-dog = Dog("Piyush")      
+dog = Dog("dog")      
 dog.info()
 dog.sound()
