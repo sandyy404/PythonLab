@@ -1,12 +1,8 @@
-# Program demonstrating single inheritance
-class Animal:
-   def __init__(self,name):
-      self.name =name
-   def info(self):
-      print("Animal's name:-",self.name)
-class Dog(Animal):
-   def sound(self):
-      print(self.name,"barks")
-dog = Dog("dog")      
-dog.info()
-dog.sound()
+# Program to create a simple class and object.
+class Car:
+   def color(self):
+      print("The color of the car is black")
+# creating object.
+obj = Car()   
+obj.color()
+   

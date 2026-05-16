@@ -1,18 +1,15 @@
-# Program to create an employee class and calculate salary
-class Employee:
-   def __init__(self,name,basicsalary):
-      self.name = name
-      self.basicsalary = basicsalary
-   def calsalary(self):
-       bonus = (20*self.basicsalary)/100
-       diwali = (2*self.basicsalary)/100
-       totalsal =bonus+diwali+self.basicsalary
-       return totalsal 
-   
-   def salary(self):
-      print("The salary of",self.name,"is",self.calsalary())
+# Program to find greatest of three numbers using function
+def greatest(a, b, c):
+    if a > b and a > c:
+        return a
+    elif b > c:
+        return b
+    else:
+        return c
 
-emp1 =Employee("Pradeep",200000)
-# emp1.calsalary()
-emp1.salary()  
-     
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+
+print("Greatest number is:", greatest(x, y, z))

@@ -1,19 +1,14 @@
-#  Program demonstrating multiple inheritance
+# . Program to create a student class and display details.
+class Student:
+   def __init__(self,name,age,mark):
+      self.name = name
+      self.age = age
+      self.mark = mark
+   def details(self):
+      print("Name:-",self.name)
+      print("Age:-",self.age)
+      print("Mark:-",self.mark)
 
-class Mother:
-    mothername = ""
-    def mother(self):
-        print(self.mothername)
-class Father:
-    fathername = ""
-    def father(self):
-        print(self.fathername)
-class Son(Mother, Father):
-    def parents(self,name):
-        self.name = name
-        print(self.name,"'s", " Father :", self.fathername)
-        print(self.name,"'s", " Mother :", self.mothername)
-s1 = Son()
-s1.fathername = "RAM"
-s1.mothername = "SITA"
-s1.parents("Ajay")
+s1 = Student("Sandeep",20,98)
+s1.details()
+         

@@ -1,20 +1,18 @@
-# Program demonstrating multilevel inheritance
-class GrandFather:
-   def __init__(self,grandfather):
-      self.grandfather = grandfather
+# Program to create an employee class and calculate salary
+class Employee:
+   def __init__(self,name,basicsalary):
+      self.name = name
+      self.basicsalary = basicsalary
+   def calsalary(self):
+       bonus = (20*self.basicsalary)/100
+       diwali = (2*self.basicsalary)/100
+       totalsal =bonus+diwali+self.basicsalary
+       return totalsal 
+   
+   def salary(self):
+      print("The salary of",self.name,"is",self.calsalary())
 
-class Father(GrandFather):
-   def __init__(self,father,grandfather):
-      self.father =father 
-      GrandFather.__init__(self,grandfather)
-class child(Father):
-   def __init__(self,child,father,grandfather):
-      self.child = child
-      Father.__init__(self,father,grandfather)
-   def generation(self):
-      print("GrandFather name:",self.grandfather)
-      print("Father'name:",self.father)
-      print("Child's name:",self.child) 
-
-s1 = child("Vinod","Dinesh","Prakash")
-s1.generation()
+emp1 =Employee("Pradeep",200000)
+# emp1.calsalary()
+emp1.salary()  
+     

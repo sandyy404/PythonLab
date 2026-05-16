@@ -1,8 +1,5 @@
-# Program to create a simple class and object.
-class Car:
-   def color(self):
-      print("The color of the car is black")
-# creating object.
-obj = Car()   
-obj.color()
-   
+# Program to define and call a function
+def greet():
+    print("Hello, Welcome to Python!")
+
+greet()
