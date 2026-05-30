@@ -18,9 +18,8 @@ class Patient(Hospital):
         self.patient_name = patient_name
     def display2(self):
            print(f"Hospital       : {self.hospital_name}")
-           print(f"Doctor Name    : {self.doctor_name}")
            print(f"Patient Name       : {self.patient_name}")
 d = Doctor("City Hospital", "Dr. Sharma", "Cardiologist")
-p1 = Patient("Apollo", "Dr.Varma","Yaad nhi","Sandeep")
+p1 = Patient("Apollo","Yaad nhi","Sandeep")
 d.display1()
 p1.display2()

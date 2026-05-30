@@ -11,5 +11,5 @@ class Student(College):
         print(f"College : {self.college_name}")
         print(f"Student : {self.student_name}")
         print(f"Roll No : {self.roll_no}")
-s = Student("Galgotias University", "Sandeep","24SCSE101049585" )
+s = Student("Galgotias University", "Sandeep","24SCSE1010485" )
 s.display()
